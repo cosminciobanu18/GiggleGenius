@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiggleGenius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="module" src="src/js/controller.js"></script>
+  </head>
+  <body class="box-border relative w-screen h-full">
+    <nav
+      class="w-60 h-full bg-blue-500 fixed z-30 flex text-4xl flex-col p-8 pt-12 gap-12 transition-transform duration-300 -translate-x-full border-2 border-blue-300"
+    >
+      <button class="hover:text-blue-700 self-start" data-page="home">
+        Home
+      </button>
+      <button class="hover:text-blue-700 self-start" data-page="statistics">
+        Statistics
+      </button>
+      <button class="hover:text-blue-700 self-start" data-page="history">
+        History
+      </button>
+    </nav>
+    <main
+      class="transition-all duration-300 h-full min-h-screen flex flex-col"
+    ></main>
+  </body>
+</html>
